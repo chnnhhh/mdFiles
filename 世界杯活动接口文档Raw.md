@@ -30,17 +30,17 @@ Returns:
 {
   "homeName": "葡萄牙",				//主队名称
   "homePicUrl": "http://xxx.xxx/pty.jpg", //主队图片
-  "homeScore": null					//主队得分 为null时表示比赛未结束  比赛结束后会有整数值
+  "homeScore": null				  //主队得分 为null时表示比赛未结束  比赛结束后会有整数值
   "awayName": "西班牙",				//客队名称
   "awayPicUrl": "http://xxx.xxx/xby.jpg",//客队图片
-  "awayScore": null					//客队得分 逻辑同主队得分
-  "homeOdds": 1.7,					//主胜赔率
-  "awayOdds": 0.9,					//客胜赔率
-  "drawOdds": 1.9,					//平局赔率
-  "matchStartTime": 1526473886000,  //比赛开始时间
-  "bettingStartTime": 1526473886000,//投注开始时间
-  "bettingEndTime": 1526473886000,	//投注截止时间
-  "matchStatus":"NORMAL"			//HIDE为隐藏,NORMAL为正常 为HIDE时不显示在页面上 只在后台界面显示
+  "awayScore": null				  //客队得分 逻辑同主队得分
+  "homeOdds": 1.7,				  //主胜赔率
+  "awayOdds": 0.9,				  //客胜赔率
+  "drawOdds": 1.9,				  //平局赔率
+  "matchStartTime": 1526473886000,     		  //比赛开始时间
+  "bettingStartTime": 1526473886000,		  //投注开始时间
+  "bettingEndTime": 1526473886000,		  //投注截止时间
+  "matchStatus":"NORMAL"			  //HIDE为隐藏,NORMAL为正常 为HIDE时不显示在页面上 只在后台界面显示
 }
 ```
 2.用户投注接口
@@ -48,8 +48,8 @@ Returns:
 ```
 Params:
 {
-  "userId": 96659903984542329, //用户id 必填
-  "matchId": 43,  				//比赛赛程id 必填
+  "userId": 96659903984542329, 		//用户id 必填
+  "matchId": 43,  			//比赛赛程id 必填
   "currentOdds":1.7,			//当前赔率 必填
   "bettingPoints": 200 			//投注积分 必填
 }
@@ -125,17 +125,17 @@ Returns
 Params
 {
 	"category":"QUARTER_FINAL", 				//分组 同筛选查询中的category取值 必填
-	"homeName":"德国",							//主场队名 必填 
-	"homePicUrl":"http://xxx.xxx/pty.jpg",		// 必填
-	"awayName":"法国", 							// 必填
-	"awayPicUrl":"http://xxx.xxx/pty.jpg",		// 必填
+	"homeName":"德国",				       //主场队名 必填 
+	"homePicUrl":"http://xxx.xxx/pty.jpg",			// 必填
+	"awayName":"法国", 				       // 必填
+	"awayPicUrl":"http://xxx.xxx/pty.jpg",			// 必填
 	"matchStartTime":1526473836000,				// 必填
 	"matchEndTime":1526473886000,				// 必填
 	"bettingStartTime":1526473836000,			// 必填
 	"bettingEndTime":1526473796000,				// 必填
-	"homeOdds":1.7,								//主胜赔率 非必填
-	"awayOdds":0.7,								//客胜赔率 非必填
-	"drawOdds":1.0 								//平局赔率 非必填
+	"homeOdds":1.7,						//主胜赔率 非必填
+	"awayOdds":0.7,						//客胜赔率 非必填
+	"drawOdds":1.0 						//平局赔率 非必填
 }
 Returns:
 //todo 需参考其他写操作的成功返回值
